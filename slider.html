@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/owlcarousel/assets/style.css">
+    <script src="/JS/jquery.min.js"></script>
+    <script src="/JS/owl.carousel.min.js"></script>
+
+</head>
+<body>
+    <div class="slide-container">
+        <div class="slide-wrapper">
+            <div class="slide">N</div>
+            <div class="slide">N</div>
+            <div class="slide">S</div>
+            <div class="slide">Đ</div>
+            <div class="slide">T</div>
+        </div>
+    </div>
+    <script>
+    $(document).ready(function () {
+    //story slider
+    $(".slide").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        smartSpeed: 1000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 5
+            }
+        }
+    });
+})
+    </script>
+    <script src="JS/jquery.min.js"></script>
+    <script src="JS/owl.carousel.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>
